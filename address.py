@@ -431,7 +431,7 @@ class Address(object):
                 "senderPublicKey": self.publicKey,
                 "recipient": recipient.address,
                 "amount": amount,
-                "fee": txFee,
+                "feeAssetId": txFee,
                 "timestamp": timestamp,
                 "attachment": base58.b58encode(crypto.str2bytes(attachment)),
                 "signature": signature
